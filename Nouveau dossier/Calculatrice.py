@@ -143,8 +143,6 @@ def BouttonAC():
     calculatrice.entree.set("")   
     calculatrice.init()
 
-  
-
 def BouttonT(): 
     calculatrice.texte += "/100"  
     calculatrice.entree.set(calculatrice.texte,calculatrice.operation())    
@@ -175,7 +173,6 @@ B0 = Button(fen,text="0", command=Boutton0, width=3, height=2, bg="grey", fg="wh
 BC = Button(fen,text="AC", command=BouttonAC, width=3, height=2, bg="gold", fg="red", relief=RIDGE).place(x=10, y=190)
 BF = Button(fen,text=".", command=BouttonF, width=3, height=2, bg="grey", fg="white").place(x=90, y=190)
 BT = Button(fen,text="%", command=BouttonT, width=3, height=2, bg="grey", fg="blue").place(x=121, y=190)
-
 BE = Button(fen,text="=", command=BouttonE, width=3, height=2, bg="skyblue", fg="black", relief=GROOVE).place(x=121, y=39)
 BD = Button(fen,text="/", command=BouttonD, width=3, height=2, bg="gold", fg="black", relief=GROOVE).place(x=152, y=189)
 BM = Button(fen,text="X", command=BouttonM, width=3, height=2, bg="gold", fg="black", relief=GROOVE).place(x=151, y=140)
